@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+   
+    <script type="text/javascript" src="views/ButtonView.js"></script>
+    <script type="text/javascript" src="model/ButtonModel.js"></script>
+    <script type="text/javascript" src="controllers/ButtonController.js"></script>
+    <script type="text/javascript" src="views/CalculatorView.js"></script>
+    <script type="text/javascript" src="model/CalculatorModel.js"></script>
+    <script type="text/javascript" src="controllers/CalculatorController.js"></script>
+     <script type="text/javascript" src="views/DisplayView.js"></script>
+    <script type="text/javascript" src="model/DisplayModel.js"></script>
+    <script type="text/javascript" src="controllers/DisplayController.js"></script>
+    <script type="text/javascript" src="calModelSpecifications.js"></script>
+    <script type="text/javascript" src="buttonInfo.js"></script>
+    <script type="text/javascript" src="views/NumericButtonView.js"></script>
+    <script type="text/javascript" src="model/NumericButtonModel.js"></script>
+    <script type="text/javascript" src="controllers/NumericButtonController.js"></script>
+    <script type="text/javascript" src="views/OperatorButtonView.js"></script>
+    <script type="text/javascript" src="model/OperatorButtonModel.js"></script>
+    <script type="text/javascript" src="controllers/OperatorButtonController.js"></script>
+    <link href="style.css" />
+
+    
+</head>
+
+<body>
+
+    <div id="btn"></div>
+    <script>
+
+        var cal = new calculatorController();
+        var obj = cal.render();
+        document.getElementById('btn').appendChild(obj);
+
+
+        var cal1 = new calculatorController();
+        var obj1 = cal1.render();
+        document.getElementById('btn').appendChild(obj1);
+
+    </script>
+</body>
+
+</html>
